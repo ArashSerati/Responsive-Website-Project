@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.shabake:hover {
+    animation: heartBeat;
+    animation-duration: 2s;
+}

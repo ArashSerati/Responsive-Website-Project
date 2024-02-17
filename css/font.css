@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: bnazanin;
+    src: url(../fonts/B-NAZANIN.TTF);
+}
+
+.font {
+    font-family: bnazanin;
+    font-size: 22px;
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دوره ها</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/shabake.css">
+    <link rel="stylesheet" href="../css/nav-icon.css">
+</head>
+
+<body class="bg-primary bg-opacity-25" id="top">
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+            <div class="container">
+                <div class="d-flex align-items-center gap-3 col-md-auto">
+                    <img src="../img/rahatyad_logo.svg" alt="rahatyad-logo" class="img-fluid" width="100">
+                    <a class="nav-link active font text-info d-none d-md-inline-block" aria-current="page"
+                        href="../index.html">
+                        <b> صفحه نخست </b>
+                    </a>
+                    <a class="nav-link font d-none d-md-inline-block icon" href="#">پروژه</a>
+                    <a class="nav-link font d-none d-md-inline-block icon" href="#">بلاگ</a>
+                    <a class="nav-link font d-none d-md-inline-block icon" href="#">درباره ما</a>
+                </div>
+                <div class="d-flex gap-4 offset-md-1">
+                    <form class="input-group d-none d-lg-flex" role="search" style="width: 14rem;">
+                        <input type="search" class="form-control font fs-6 bg-black bg-opacity-10 text-black"
+                            placeholder="چی می خوای یاد بگیری؟؟" aria-label="Recipient's username"
+                            aria-describedby="basic-addon2" required>
+                        <button type="submit" class="input-group-text" id="basic-addon2">
+                            <a href="">
+                                <i class='bx bx-search-alt-2 fs-3' style='color:#2697d5'></i>
+                            </a>
+                        </button>
+                    </form>
+                    <div class="btn btn-light shadow-sm border-1 border-dark-subtle">
+                        <a href="#" class="text-decoration-none text-black d-flex align-items-center"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-whatever="@mdo">
+                            <i class='bx bxs-user me-2 fs-4' style='color:#2697d5'></i>
+                            <span class="font">
+                                ورود / ثبت نام
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <button class="d-md-none navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-md-none offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="static"
+                    tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel"
+                    style="background-color: #e3f2fd;">
+                    <div class="offcanvas-header">
+                        <img src="../img/rahatyad_logo.svg" alt="rahatyad-logo" class="img-fluid offcanvas-title"
+                            width="80">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column gap-3">
+                        <a class="font text-info text-decoration-none shadow rounded ps-3 w-75" aria-current="page"
+                            href="../index.html">
+                            <b> صفحه نخست </b>
+                        </a>
+                        <a class="font text-black text-decoration-none shadow rounded ps-3 w-75" href="#"> پروژه</a>
+                        <a class="font text-black text-decoration-none shadow rounded ps-3 w-75" href="#">بلاگ</a>
+                        <a class="font text-black text-decoration-none shadow rounded ps-3 w-75" href="#">درباره ما</a>
+                        <form class="input-group mt-2" role="search" style="width: 15rem;">
+                            <input type="search" class="form-control font fs-6 bg-black bg-opacity-10 text-black"
+                                placeholder="چی می خوای یاد بگیری؟؟" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2" required>
+                            <button type="submit" class="input-group-text" id="basic-addon2">
+                                <a href="">
+                                    <i class='bx bx-search-alt-2 fs-3' style='color:#2697d5'></i>
+                                </a>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <form class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close col-1" data-bs-dismiss="modal" aria-label="Close"
+                            style="margin: 0 0 8rem;">
+                        </button>
+                        <div class="offset-3">
+                            <img src="../img/rahatyad_logo.svg" alt="Rahatyad-logo" class="img-fluid w-25">
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <span class="font fs-2">
+                            <b> خوش آمدید </b>
+                        </span>
+                        <br>
+                        <span class="font fs-5">
+                            <b> وارد حساب راحت یاد خود شوید.</b>
+                        </span>
+                        <div>
+                            <div class="mb-3">
+                                <label for="name" class="col-form-label font"><b> نام</b></label>
+                                <input type="text" class="form-control font" id="name" placeholder="علی حقیقی" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile" class="col-form-label font"><b> شماره موبایل</b></label>
+                                <input type="tel" class="form-control font" id="mobile" placeholder="09391128174"
+                                    required pattern="[0-9]{11}" maxlength="11">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0 d-flex justify-content-center">
+                        <button type="submit" class="btn font text-light"
+                            style="background: rgb(34,193,195);
+                                        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,154,253,1) 100%);">
+                            <b> دریافت کد </b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </header>
+    <main role="main" style="margin-top: 10rem;">
+        <div class="container">
+            <div class="mt-5">
+                <img src="../img/titricon.png" alt="icon" class="img-fluid">
+                <span class="font fs-1">
+                    <strong>
+                        جدیدترین دوره ها
+                    </strong>
+                </span>
+            </div>
+            <div class="d-flex flex-wrap gap-5 justify-content-center align-items-center mt-4">
+                <div class="card p-3 shadow rounded-4 border-1 border-success border-opacity-50" style="width: 18rem;">
+                    <img src="../img/Figma.png" class="card-img-top img-fluid" alt="Figma-image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font"><b>دوره جامع آموزش فیگما</b> </h5>
+                        <p class="card-text font">
+                            رایگان
+                        </p>
+                        <a href="./figma.html"
+                            class="btn btn-primary font d-flex justify-content-center align-items-center me-4 ms-4">
+                            مشاهده
+                            <i class='bx bx-glasses ms-2'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card p-3 shadow rounded-4 border-1 border-success border-opacity-50" style="width: 18rem;">
+                    <img src="../img/MATLAB.png" class="card-img-top img-fluid" alt="Matlab-image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font"><b> دوره آموزش جامع متلب </b> </h5>
+                        <p class="card-text font">
+                            رایگان
+                        </p>
+                        <a href="#"
+                            class="btn btn-primary font d-flex justify-content-center align-items-center me-4 ms-4">
+                            مشاهده
+                            <i class='bx bx-glasses ms-2'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card p-3 shadow rounded-4 border-1 border-success border-opacity-50" style="width: 18rem;">
+                    <img src="../img/CSSHTML.png" class="card-img-top img-fluid" alt="CssHtml-image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font"><b> آموزش جامع HTML CSS </b> </h5>
+                        <p class="card-text font">
+                            <del style="color: red;">590,000</del>
+                            390,000 تومان
+                        </p>
+                        <a href="#"
+                            class="btn btn-primary font d-flex justify-content-center align-items-center me-4 ms-4">
+                            مشاهده
+                            <i class='bx bx-glasses ms-2'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card p-3 shadow rounded-4 border-1 border-success border-opacity-50" style="width: 18rem;">
+                    <img src="../img/Bootstrap.png" class="card-img-top img-fluid" alt="Bootstrap-image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font"><b> آموزش جامع بوت استرپ5 </b> </h5>
+                        <p class="card-text font">
+                            <del style="color: red;">490,000</del>
+                            440,000 تومان
+                        </p>
+                        <a href="#"
+                            class="btn btn-primary font d-flex justify-content-center align-items-center me-4 ms-4">
+                            مشاهده
+                            <i class='bx bx-glasses ms-2'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card p-3 shadow rounded-4 border-1 border-success border-opacity-50" style="width: 18rem;">
+                    <img src="../img/JS.png" class="card-img-top img-fluid" alt="Js-image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font"><b> آموزش جامع جاوااسکریپت </b> </h5>
+                        <p class="card-text font">
+                            <del style="color: red;">890,000</del>
+                            800,000 تومان
+                        </p>
+                        <a href="#"
+                            class="btn btn-primary font d-flex justify-content-center align-items-center me-4 ms-4">
+                            مشاهده
+                            <i class='bx bx-glasses ms-2'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card p-3 shadow rounded-4 border-1 border-success border-opacity-50" style="width: 18rem;">
+                    <img src="../img/Sass.png" class="card-img-top img-fluid" alt="Sass-image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font"><b> دوره جامع آموزش Sass </b> </h5>
+                        <p class="card-text font">
+                            <del style="color: red;">250,000</del>
+                            220,000 تومان
+                        </p>
+                        <a href="#"
+                            class="btn btn-primary font d-flex justify-content-center align-items-center me-4 ms-4">
+                            مشاهده
+                            <i class='bx bx-glasses ms-2'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card p-3 shadow rounded-4 border-1 border-success border-opacity-50" style="width: 18rem;">
+                    <img src="../img/CCourse.png" class="card-img-top img-fluid" alt="C-image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font"><b> دوره جامع آموزش زبان C </b> </h5>
+                        <p class="card-text font">
+                            رایگان
+                        </p>
+                        <a href="#"
+                            class="btn btn-primary font d-flex justify-content-center align-items-center me-4 ms-4">
+                            مشاهده
+                            <i class='bx bx-glasses ms-2'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#top" title="برو بالا">
+            <i class='bx bx-chevron-up-circle'
+                style='color:#a036ce; font-size: 3rem; position: fixed; right: 1.2rem; bottom: 1.2rem;'>
+            </i>
+        </a>
+    </main>
+    <footer role="contentinfo" class="mt-5">
+        <div class="bg-black bg-opacity-75 border-top border-danger border-3 d-flex flex-wrap py-5">
+            <div class="offset-1 col-auto pt-lg-2" style="line-height: 1.2rem;">
+                <span class="font text-light"><b> آدرس: </b></span>
+                <span class="font text-light"><b> شیراز، پل معالی آباد، خیابان شهید کبار </b></span>
+                <br>
+                <br>
+                <span class="font text-light"><b> شماره تماس: </b></span>
+                <span class="font text-light"><b> 09391128174 </b></span>
+                <br>
+                <br>
+                <span class="font text-light"><b> شماره تماس ثابت: </b></span>
+                <span class="font text-light"><b> 07136357081 </b></span>
+            </div>
+            <div class="offset-4 ps-sm-3 offset-lg-3 offset-xxl-4 mt-5 mt-lg-0">
+                <span class="font text-light">
+                    <b> همراه ما باشید! </b>
+                </span>
+                <br>
+                <div class="d-flex gap-4">
+                    <a href="" title="instagram" class="text-decoration-none text-light opacity-50 fs-2 shabake">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" title="twitter" class="text-decoration-none text-light opacity-50 fs-2 shabake">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" title="whatsapp" class="text-decoration-none text-light opacity-50 fs-2 shabake">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="" title="linkedin" class="text-decoration-none text-light opacity-50 fs-2 shabake">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="font text-light mt-2">
+                    <b> با ثبت ایمیل، از جدید‌ ترین تخفیف‌ ها با‌ خبر شوید </b>
+                </p>
+                <form class="input-group input-group-sm mt-2">
+                    <input type="email" class="form-control font fs-5" placeholder="email address"
+                        aria-label="Recipient's username" aria-describedby="button-addon2" required>
+                    <button class="btn btn-secondary pt-2 pb-2 ps-4 pe-4" type="submit" id="button-addon2">
+                        <b> ثبت </b>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
